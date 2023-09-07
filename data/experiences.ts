@@ -6,7 +6,7 @@ export const works = [
     end_date: "Present",
     exact_period: "2022",
     is_current: true,
-    logo: "/assets/nona-lifestyle.jpeg",
+    logo: "/assets/nona-lifestyle.png",
   },
 ];
 
@@ -27,6 +27,6 @@ export const internships = [
     end_date: "11/2021",
     exact_period: "4 mos.",
     is_current: false,
-    logo: "/assets/brototype.png",
+    logo: "/assets/brototype.jpg",
   },
 ];

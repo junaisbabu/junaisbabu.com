@@ -27,9 +27,9 @@ function WorkCard({ title, company }: Props) {
               className="flex md:items-center md:justify-between flex-col md:flex-row gap-1 md:gap-6"
             >
               <div className="inline-flex gap-4 items-start flex-1">
-                <div className="border-4 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition-colors dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                   <AvatarDemo
-                    className="w-10 h-10"
+                    className="w-7 h-7"
                     image={logo}
                     alt={company_name}
                   />

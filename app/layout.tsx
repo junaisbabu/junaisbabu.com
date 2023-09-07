@@ -1,8 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Lato({
+  subsets: ["latin"],
+  style: "normal",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Junais Babu",
