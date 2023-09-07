@@ -24,7 +24,7 @@ function Home() {
                 <TabsList className="grid h-fit text-zinc-800 dark:text-zinc-100 w-full grid-cols-2">
                   <TabsTrigger
                     value="experience"
-                    className="inline-flex gap-4 justify-center items-center"
+                    className="inline-flex gap-4 justify-center items-center font-semibold"
                   >
                     {work} Experience
                   </TabsTrigger>
@@ -36,7 +36,7 @@ function Home() {
                 </TabsTrigger> */}
                   <TabsTrigger
                     value="project"
-                    className="inline-flex gap-4 justify-center items-center"
+                    className="inline-flex gap-4 justify-center items-center font-semibold"
                   >
                     {skills} Project
                   </TabsTrigger>

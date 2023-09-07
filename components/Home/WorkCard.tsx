@@ -18,7 +18,7 @@ interface Props {
 function WorkCard({ title, company }: Props) {
   return (
     <div>
-      <h2 className="text-sm text-zinc-500 mb-2">{title}</h2>
+      <h2 className="text-xs text-zinc-500 mb-2">{title}</h2>
       <ul className="space-y-6">
         {company.map(
           ({ company_name, logo, role, is_current, exact_period }) => (
