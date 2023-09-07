@@ -11,11 +11,12 @@ function AboutMe() {
         image="/assets/junais.jpg"
         alt="Junais Babu"
       />
-      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-100">
+      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         Hey there.
       </h1>
-      <p className="text-base font-normal text-zinc-400">
-        I’m <strong className="text-zinc-300 font-medium">Junais Babu.</strong>{" "}
+      <p className="text-base font-normal text-zinc-400 dark:text-zinc-400">
+        I’m{" "}
+        <strong className="dark:text-zinc-300 text-zinc-500 font-medium">Junais Babu.</strong>{" "}
         I like building stuff, mostly software. I live in Ooty, India.
       </p>
       <ul className="inline-flex items-center gap-6">

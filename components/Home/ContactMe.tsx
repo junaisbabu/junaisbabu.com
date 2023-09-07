@@ -17,11 +17,11 @@ function ContactMe() {
       <CardHeader>
         <div className="flex flex-row w-full items-center gap-4">
           <div>{contact}</div>
-          <CardTitle className="text-base font-bold text-zinc-100">
+          <CardTitle className="text-base font-bold text-zinc-800 dark:text-zinc-100">
             Contact Me
           </CardTitle>
         </div>
-        <CardDescription className="text-sm text-zinc-400">
+        <CardDescription className="text-sm text-zinc-500 dark:text-zinc-400">
           Feel free to contact me!
         </CardDescription>
       </CardHeader>
