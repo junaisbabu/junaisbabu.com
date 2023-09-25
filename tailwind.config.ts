@@ -9,6 +9,21 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        secondary: "#FB5761",
+        utility: {
+          info: "#100B7D7",
+          "info-light": "#E6FBFE",
+          warning: "#FDA900",
+          "warning-light": "#FEFAE5",
+          purple: "#6352C2",
+          "purple-light": "#EAE5FE",
+          success: "#39B37E",
+          "success-light": "#E2FBEE",
+          error: "#FB5761",
+          "error-light": "#FEECEC",
+        },
+      },
       keyframes: {
         // Accordion
         "accordion-down": {
@@ -27,6 +42,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwindcss-radix")()],
 };
 export default config;
