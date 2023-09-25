@@ -1,6 +1,6 @@
 import React from "react";
 import { AvatarDemo } from "../ui/avatar/avatar-demo";
-import { github, linkedin, twitter } from "../icons/svg";
+import { github, linkedin, twitter, whatsApp } from "../icons/svg";
 import Link from "next/link";
 
 function AboutMe() {
@@ -16,12 +16,14 @@ function AboutMe() {
       </h1>
       <p className="text-base font-normal text-zinc-400 dark:text-zinc-400">
         I’m{" "}
-        <strong className="dark:text-zinc-300 text-zinc-500 font-medium">Junais Babu.</strong>{" "}
+        <strong className="dark:text-zinc-300 text-zinc-500 font-medium">
+          Junais Babu.
+        </strong>{" "}
         I like building stuff, mostly software. I live in Ooty, India.
       </p>
       <ul className="inline-flex items-center gap-6">
         <li>
-          <Link href="https://twitter.com/JunaisDvs">{twitter}</Link>
+          <Link href="https://wa.me/+919385403668?text=Hello">{whatsApp}</Link>
         </li>
         <li>
           <Link href="https://github.com/junaisbabu">{github}</Link>
