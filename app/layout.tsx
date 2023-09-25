@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toast/toaster";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
