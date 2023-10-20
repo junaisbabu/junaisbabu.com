@@ -12,6 +12,12 @@ const inter = Lato({
 export const metadata: Metadata = {
   title: "Junais Babu",
   description: "Junais Babu's official website",
+  viewport: {
+    width: "device-width",
+    initialScale: 1.0,
+    maximumScale: 1.0,
+    userScalable: false
+  }
 };
 
 export default function RootLayout({
