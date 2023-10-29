@@ -9,7 +9,7 @@ function Projects() {
   return (
     <Card className="h-fit max-h-full overflow-y-scroll hide-scrollbar">
       <CardContent className="space-y-4 p-6 h-full">
-        <div className="grid grid-cols-2 place-items-center gap-8 text-sm dark:text-zinc-100 text-zinc-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:place-items-center gap-8 text-sm dark:text-zinc-100 text-zinc-800 pl-[20%] sm:pl-0">
           <Link
             href={`https://ecommerce-store.${domain}`}
             target="_blank"
