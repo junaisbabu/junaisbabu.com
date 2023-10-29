@@ -1,3 +1,4 @@
+import { cn } from "@/utils/cn";
 import {
   Card,
   CardContent,
@@ -7,18 +8,20 @@ import {
 } from "./card";
 
 function CardBox({
+  className = "",
   icon,
   title,
   description,
   children,
 }: {
+  className?: string;
   icon: React.ReactElement;
   title: string;
   description?: string;
   children: React.ReactNode;
 }) {
   return (
-    <Card className="w-[450px] h-fit p-6">
+    <Card className={cn("max-w-[450px] h-fit p-6", className)}>
       <CardHeader className="p-0">
         <div className="flex flex-row w-full items-center gap-4">
           <div>{icon}</div>

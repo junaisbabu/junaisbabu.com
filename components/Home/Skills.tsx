@@ -27,7 +27,7 @@ const StyleDiv = ({ children }: { children: React.ReactNode }) => (
 
 function Skills() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
       <div>
         <h2 className="text-xs text-zinc-500 mb-2">Frontend</h2>
         <div className="flex flex-wrap gap-4">
@@ -46,7 +46,7 @@ function Skills() {
           </StyleDiv>
           <StyleDiv>
             <AvatarDemo
-              className="w-7 h-7 bg-zinc-100"
+              className="w-7 h-7 bg-white dark:bg-zinc-100"
               image={Next}
               alt="Next JS"
             />
@@ -85,7 +85,7 @@ function Skills() {
           </StyleDiv>
           <StyleDiv>
             <AvatarDemo
-              className="w-7 h-7 bg-zinc-100"
+              className="w-7 h-7 bg-white dark:bg-zinc-100"
               image={Express}
               alt="Express JS"
             />

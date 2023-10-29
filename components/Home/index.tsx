@@ -17,10 +17,11 @@ function Home() {
           <div className="w-full flex justify-end mb-6">
             <ThemeSwitch />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <section className="flex flex-col gap-24 md:gap-28 my-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] place-items-center gap-8">
+            <section className="flex flex-col items-center md:items-start gap-24 md:gap-28 my-8">
               <AboutMe />
               <CardBox
+                className="hidden lg:block"
                 icon={contact}
                 title="Contact Me"
                 description="Feel free to contact me!"
@@ -38,6 +39,14 @@ function Home() {
                 </CardBox>
                 <CardBox icon={project} title="Projects">
                   <Projects />
+                </CardBox>
+                <CardBox
+                  className="block lg:hidden"
+                  icon={contact}
+                  title="Contact Me"
+                  description="Feel free to contact me!"
+                >
+                  <ContactMe />
                 </CardBox>
               </div>
             </section>
