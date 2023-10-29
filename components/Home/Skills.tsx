@@ -1,91 +1,124 @@
-import React from "react";
-import { Card, CardContent } from "../ui/card";
-import WorkCard from "./WorkCard";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../ui/accordion";
+import { AvatarDemo } from "../ui/avatar/avatar-demo";
+
+const HTML = "/skills/html.svg";
+const CSS = "/skills/css.svg";
+const JS = "/skills/javascript.svg";
+const React = "/skills/reactjs.svg";
+const Next = "/skills/nextjs.svg";
+const Vue = "/skills/vue-js.svg";
+const Tailwind = "/skills/tailwind-css.svg";
+const MUI = "/skills/material-ui.svg";
+const Bootstrap = "/skills/bootstrap.svg";
+const Postgres = "/skills/postgres.svg";
+const Mongo = "/skills/mongodb.svg";
+const SQL = "/skills/my-sql.svg";
+const Node = "/skills/node-js.svg";
+const Express = "/skills/express-js.svg";
+const Firebase = "/skills/firebase.svg";
+const Windows = "/skills/windows.svg";
+const Linux = "/skills/linux.svg";
+const Mac = "/skills/mac.svg";
+
+const StyleDiv = ({ children }: { children: React.ReactNode }) => (
+  <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+    {children}
+  </div>
+);
 
 function Skills() {
   return (
-    <Card className="h-fit max-h-full overflow-y-scroll hide-scrollbar">
-      <CardContent className="space-y-4 p-6 h-full">
-        <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="text-sm text-zinc-100">
-              Web Development
-            </AccordionTrigger>
-            <AccordionContent>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <h1 className="text-sm font-normal text-zinc-400 mb-2">
-                    Front-end
-                  </h1>
-                  <ul className="text-xs space-y-2 list-disc ml-4">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Next JS</li>
-                    <li>Redux</li>
-                    <li>React Query</li>
-                  </ul>
-                </div>
-                <div>
-                  <h1 className="text-sm font-normal text-zinc-400 mb-2">
-                    Back-end
-                  </h1>
-                  <ul className="text-xs space-y-2 list-disc ml-4">
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>MongoDB</li>
-                    <li>Mongoose</li>
-                    <li>PostgreSQL</li>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="text-sm text-zinc-100">
-              Mobile App Development
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className="text-xs space-y-2 list-disc ml-4">
-                <li>React Native</li>
-                <li>Capacitor.js</li>
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger className="text-sm text-zinc-100">
-              UI / UX
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className="text-xs space-y-2 list-disc ml-4">
-                <li>Figma</li>
-                <li>Adobe Photoshop</li>
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger className="text-sm text-zinc-100">
-              Other
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className="text-xs space-y-2 list-disc ml-4">
-                <li>Git</li>
-                <li>Testing</li>
-                <li>Data Structures & Algorithm</li>
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </CardContent>
-    </Card>
+    <div className="space-y-4">
+      <div>
+        <h2 className="text-xs text-zinc-500 mb-2">Frontend</h2>
+        <div className="flex flex-wrap gap-4">
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={HTML} alt="HTML" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={CSS} alt="CSS" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo
+              className="w-7 h-7 bg-[#FED602]"
+              image={JS}
+              alt="Javascript"
+            />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo
+              className="w-7 h-7 bg-zinc-100"
+              image={Next}
+              alt="Next JS"
+            />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={React} alt="React JS" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Vue} alt="Vue JS" />
+          </StyleDiv>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-xs text-zinc-500 mb-2">UI Framework</h2>
+        <div className="flex flex-wrap gap-4">
+          <StyleDiv>
+            <AvatarDemo
+              className="w-7 h-7"
+              image={Tailwind}
+              alt="Tailwind CSS"
+            />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Bootstrap} alt="Bootstrap" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={MUI} alt="MUI" />
+          </StyleDiv>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-xs text-zinc-500 mb-2">Backend</h2>
+        <div className="flex flex-wrap gap-4">
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Node} alt="Node JS" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo
+              className="w-7 h-7 bg-zinc-100"
+              image={Express}
+              alt="Express JS"
+            />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Mongo} alt="Mongo DB" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Postgres} alt="Postgres" />
+          </StyleDiv>
+          {/* <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={SQL} alt="My SQL" />
+          </StyleDiv> */}
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Firebase} alt="Firebase" />
+          </StyleDiv>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-xs text-zinc-500 mb-2">OS</h2>
+        <div className="flex flex-wrap gap-4">
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Mac} alt="Mac" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Linux} alt="Linux" />
+          </StyleDiv>
+          <StyleDiv>
+            <AvatarDemo className="w-7 h-7" image={Windows} alt="Windows" />
+          </StyleDiv>
+        </div>
+      </div>
+    </div>
   );
 }
 
