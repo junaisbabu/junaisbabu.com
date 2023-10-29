@@ -1,7 +1,5 @@
-import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
-import { link, skills } from "../icons/svg";
+import { link } from "../icons/svg";
 
 const domain = "junaisbabu.com";
 

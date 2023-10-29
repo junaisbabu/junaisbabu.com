@@ -1,4 +1,3 @@
-import React, { ReactElement } from "react";
 import {
   Card,
   CardContent,
@@ -6,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./card";
-import Link from "next/link";
 
 function CardBox({
   icon,
@@ -14,7 +12,7 @@ function CardBox({
   description,
   children,
 }: {
-  icon: ReactElement;
+  icon: React.ReactElement;
   title: string;
   description?: string;
   children: React.ReactNode;

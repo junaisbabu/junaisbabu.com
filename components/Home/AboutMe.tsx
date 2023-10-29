@@ -1,6 +1,5 @@
-import React from "react";
 import { AvatarDemo } from "../ui/avatar/avatar-demo";
-import { github, linkedin, twitter, whatsApp } from "../icons/svg";
+import { github, linkedin, whatsApp } from "../icons/svg";
 import Link from "next/link";
 
 function AboutMe() {

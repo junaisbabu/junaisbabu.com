@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useEffect } from "react";
 import AboutMe from "./AboutMe";
 import Experieces from "./Experieces";
 import ThemeSwitch from "./ThemeSwitch";
@@ -8,7 +7,6 @@ import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 import CardBox from "../ui/card-box";
 import { contact, project, skills, work } from "../icons/svg";
-import { AvatarDemo } from "../ui/avatar/avatar-demo";
 import Skills from "./Skills";
 
 function Home() {

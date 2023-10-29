@@ -1,6 +1,4 @@
-import React from "react";
 import { AvatarDemo } from "../ui/avatar/avatar-demo";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 interface Props {
   title: string;
