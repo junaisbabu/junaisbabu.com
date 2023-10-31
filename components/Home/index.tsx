@@ -8,13 +8,14 @@ import ContactMe from "./ContactMe";
 import CardBox from "../ui/card-box";
 import { contact, project, skills, work } from "../icons/svg";
 import Skills from "./Skills";
+import Footer from "./Footer";
 
 function Home() {
   return (
-    <main className="bg-[#FAFAFA] dark:bg-black transition-colors min-h-screen max-h-full">
-      <div className="max-w-[1216px] relative bg-white dark:bg-[#18181B] transition-colors mx-auto h-full">
-        <div className="mx-auto w-11/12 sm:w-10/12 h-full py-6 flex flex-col">
-          <div className="w-full flex justify-end mb-6">
+    <div className="bg-[#FAFAFA] dark:bg-black transition-colors min-h-screen max-h-full">
+      <div className="max-w-[1216px] relative bg-white dark:bg-[#18181B] transition-colors mx-auto h-full w-full ring-1 ring-zinc-100 dark:ring-zinc-300/20">
+        <main className="mx-auto w-11/12 sm:w-10/12 h-full py-6 flex flex-col gap-10">
+          <div className="w-full flex justify-end">
             <ThemeSwitch />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] place-items-center gap-8">
@@ -51,9 +52,10 @@ function Home() {
               </div>
             </section>
           </div>
-        </div>
+        </main>
+        <Footer />
       </div>
-    </main>
+    </div>
   );
 }
 
