@@ -5,7 +5,7 @@ const domain = "junaisbabu.com";
 
 function Projects() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 sm:place-items-center gap-8 text-sm dark:text-zinc-100 text-zinc-800 pl-[20%] sm:pl-0">
+    <div className="grid grid-cols-1 sm:grid-cols-2 sm:place-items-center gap-5 text-sm dark:text-zinc-100 text-zinc-800 pl-10 sm:pl-0">
       <Link
         href={`https://ecommerce-store.${domain}`}
         target="_blank"

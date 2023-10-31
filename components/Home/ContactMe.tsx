@@ -40,27 +40,29 @@ function ContactMe() {
 
   return (
     <form onSubmit={sendEmail}>
-      <div className="space-y-4">
-        <Input
-          type="text"
-          placeholder="Name"
-          className="bg-transparent rounded-md"
-          name="from_name"
-          required
-        />
-        <Input
-          type="email"
-          placeholder="Email"
-          className="bg-transparent rounded-md"
-          name="from_email"
-          required
-        />
-        <Textarea
-          placeholder="Message..."
-          className="bg-transparent rounded-md resize-none"
-          name="message"
-          required
-        />
+      <div className="space-y-5">
+        <div className="space-y-4">
+          <Input
+            type="text"
+            placeholder="Name"
+            className="bg-transparent rounded-md"
+            name="from_name"
+            required
+          />
+          <Input
+            type="email"
+            placeholder="Email"
+            className="bg-transparent rounded-md"
+            name="from_email"
+            required
+          />
+          <Textarea
+            placeholder="Message..."
+            className="bg-transparent rounded-md resize-none"
+            name="message"
+            required
+          />
+        </div>
         <Button className="w-full" type="submit">
           {isSending ? "Sending..." : "Send Message"}
         </Button>

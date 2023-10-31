@@ -33,7 +33,9 @@ function CardBox({
           {description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4 p-6 h-full">{children}</CardContent>
+      <CardContent className="space-y-4 p-0 h-full mt-6">
+        {children}
+      </CardContent>
     </Card>
   );
 }
