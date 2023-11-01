@@ -30,7 +30,7 @@ function Home() {
                 <ContactMe />
               </CardBox>
             </section>
-            <section>
+            <section className="mx-auto lg:ml-auto lg:mr-0">
               <div className="max-w-[450px] space-y-6 ml-auto">
                 <CardBox icon={work} title="Experience">
                   <Experieces />
