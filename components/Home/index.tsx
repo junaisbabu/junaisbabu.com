@@ -25,7 +25,7 @@ function Home() {
                 className="hidden lg:block"
                 icon={contact}
                 title="Contact Me"
-                description="Feel free to contact me!"
+                description="Get in Touch with Me!"
               >
                 <ContactMe />
               </CardBox>
@@ -45,7 +45,7 @@ function Home() {
                   className="block lg:hidden"
                   icon={contact}
                   title="Contact Me"
-                  description="Feel free to contact me!"
+                  description="Get in Touch with Me!"
                 >
                   <ContactMe />
                 </CardBox>
