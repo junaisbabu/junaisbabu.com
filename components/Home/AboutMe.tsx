@@ -18,7 +18,8 @@ function AboutMe() {
         <strong className="dark:text-zinc-300 text-zinc-500 font-medium">
           Junais Babu.
         </strong>{" "}
-        I like building stuff, mostly software. I live in Ooty, India.
+        I like building stuff, mostly software. Currently, I live in Gurgaon,
+        India.
       </p>
       <ul className="inline-flex items-center gap-6">
         <li>
