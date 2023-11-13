@@ -1,14 +1,14 @@
 "use client";
 
-import AboutMe from "./AboutMe";
-import Experieces from "./Experieces";
-import ThemeSwitch from "./ThemeSwitch";
-import Projects from "./Projects";
-import ContactMe from "./ContactMe";
+import AboutMe from "./about-me";
+import Experieces from "./experieces";
+import ThemeSwitch from "./theme-switch";
+import Projects from "./projects";
+import ContactMe from "./contact-me";
 import CardBox from "../ui/card-box";
 import { contact, project, skills, work } from "../icons/svg";
-import Skills from "./Skills";
-import Footer from "./Footer";
+import Skills from "./skills";
+import Footer from "./footer";
 
 function Home() {
   return (

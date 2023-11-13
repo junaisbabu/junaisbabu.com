@@ -1,5 +1,5 @@
 import React from "react";
-import WorkCard from "./WorkCard";
+import WorkCard from "./work-card";
 import { internships, works } from "@/data/experiences";
 
 function Experieces() {
