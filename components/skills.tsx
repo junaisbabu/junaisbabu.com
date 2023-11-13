@@ -1,4 +1,4 @@
-import { AvatarDemo } from "../ui/avatar/avatar-demo";
+import { AvatarDemo } from "./ui/avatar/avatar-demo";
 
 const HTML = "/skills/html.svg";
 const CSS = "/skills/css.svg";

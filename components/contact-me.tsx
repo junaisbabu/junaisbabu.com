@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
-import { Button } from "../ui/button";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
 import emailjs from "@emailjs/browser";
-import { useToast } from "../ui/toast/use-toast";
+import { useToast } from "./ui/toast/use-toast";
 
 function ContactMe() {
   const { toast } = useToast();

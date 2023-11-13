@@ -5,8 +5,8 @@ import Experieces from "./experieces";
 import ThemeSwitch from "./theme-switch";
 import Projects from "./projects";
 import ContactMe from "./contact-me";
-import CardBox from "../ui/card-box";
-import { contact, project, skills, work } from "../icons/svg";
+import CardBox from "./ui/card-box";
+import { contact, project, skills, work } from "./icons/svg";
 import Skills from "./skills";
 import Footer from "./footer";
 

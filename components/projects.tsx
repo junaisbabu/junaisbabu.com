@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { link } from "../icons/svg";
+import { link } from "./icons/svg";
 
 const domain = "junaisbabu.com";
 

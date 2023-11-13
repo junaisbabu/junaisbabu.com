@@ -1,4 +1,4 @@
-import { AvatarDemo } from "../ui/avatar/avatar-demo";
+import { AvatarDemo } from "./ui/avatar/avatar-demo";
 
 interface Props {
   title: string;

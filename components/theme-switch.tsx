@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Toggle } from "../ui/toggle";
-import { darkSwitch, lightSwitch } from "../icons/svg";
+import { Toggle } from "./ui/toggle";
+import { darkSwitch, lightSwitch } from "./icons/svg";
 
 function ThemeSwitch() {
   const [theme, setTheme] = useState<string | null>(null);
